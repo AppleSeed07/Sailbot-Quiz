@@ -7,6 +7,12 @@ from standard_calc import bound_to_180, is_angle_between
 def test_bound_basic1():
     assert bound_to_180(0) == 0
     assert bound_to_180(2137) == -23
+    assert bound_to_180(135) == 135
+    assert bound_to_180(180) == -180
+    assert bound_to_180(6767) == -73
+    assert bound_to_180(200) == -160
+    assert bound_to_180(-182) == 178
+    assert bound_to_180(-1) == -1
 
 
 """ Tests for is_angle_between() """
