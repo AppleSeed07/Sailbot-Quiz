@@ -7,11 +7,10 @@ def bound_to_180(angle):
 
     Args:
         angle (float): The input angle in degrees.
-
     Returns:
         float: The bounded angle in degrees.
     """
-    
+
     return (angle + 180) % 360 - 180
 
 
