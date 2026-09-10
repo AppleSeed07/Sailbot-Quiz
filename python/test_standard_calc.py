@@ -11,7 +11,7 @@ def test_bound_basic1():
     assert bound_to_180(180) == -180
     assert bound_to_180(6767) == -73
     assert bound_to_180(200) == -160
-    assert bound_to_180(-182) == 178
+    assert bound_to_180(-182.8) == 177.2
     assert bound_to_180(-1) == -1
 
 
@@ -22,3 +22,5 @@ def test_between_basic1():
     assert is_angle_between(0, 1, 2)
     assert not is_angle_between(200, 120, 300)
     assert not is_angle_between(0, 300, 720)
+    assert (0, 0, 179.2)
+    assert not(45, 45, 270)
