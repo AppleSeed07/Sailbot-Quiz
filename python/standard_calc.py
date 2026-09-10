@@ -40,4 +40,4 @@ def is_angle_between(first_angle, middle_angle, second_angle):
     if s <= 180:
         return 0 <= m <= s
     else:
-        return not 0 <= m <= s
+        return m <= 0 or m >= s
