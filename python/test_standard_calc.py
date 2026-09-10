@@ -6,6 +6,7 @@ from standard_calc import bound_to_180, is_angle_between
 
 def test_bound_basic1():
     assert bound_to_180(0) == 0
+    assert bound_to_180(2137) 
 
 
 """ Tests for is_angle_between() """
